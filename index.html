@@ -1,78 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-</head>
-<body>
-    <div id="nav">
-        <h3><b>Jay</b>Portfolio</h3>
-        <button>Check</button>
-    </div>
-    <div id="main">
-        <div id="page">
-            <div id="loop">
-                <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
-                <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
-                <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
-            </div>
-            <h3>CYBERFICTION AIMS TO BE A DECENTRALIZED COMMUNITY THAT CAN <br> CREATE NEW VALUES AND PROFITS THROUGH PLAY IN THE VIRTUAL <br> WORLD.</h3>
-            <h4>...SCROLL TO READ</h4>
-            <canvas></canvas>
-        </div>
-        <div id="page1">
-            <div id="right-text">
-                <h3>Jay Portfolio / KEY WORD</h3>
-                <h1>HAVE FUN
-                    <br>
-                    LET'S PLAY
-                    <br>
-                    JUST BE TOGETHER</h1>
-            </div>
-            <div id="left-text">
-                <h1>MAKE A STORY
-                    <br>
-                    TAKE A CHANCE
-                    <br>
-                    BUILD AND OWNED</h1>
-                    <h3>..AND MAINTAIN GOOD HUMANITY</h3>
-            </div>
-        </div>
-        <div id="page2">
-            <div id="text1">
-                <h3>CYBERFICTION / HAVE FUN</h3>
-                <h1>LET'S
-                    <br>
-                    HAVE FUN
-                    <br>
-                    TOGETHER</h1>
-            </div>
-            <div id="text2">
-                <p>LET'S HAVE A BLAST! LET'S JUST THROW AWAY AGE, GENDER, REGION, <br> STATUS, ETC., DON'T COMPETE, DON'T FIGHT, COOPERATE AND SHARE <br> WITH EACH OTHER AND ENJOY IT TOGETHER! SO THAT YOU CAN STAND <br> THERE IN THE NOT-TOO-DISTANT FUTURE AND DREAM OF ANOTHER NEW <br> FUTURE</p>
-            </div>
-        </div>
-        <div id="page3">
-            <div id="text3">
-                <h3>CYBERFICTION / PLAYGROUND</h3>
-                <h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
 
-CYBERFIELD
-<br>
-IS OUR
-<br>
-PLAYGROUND
-                </h1>
-               
+    <!-- locomotive styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+    <title>GSAP Learn</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="wesite-content" id="preloader">
+        
+        <!-- Character -->
+        <div class="header">
+          <div class="h1">
+            <h1><b>Jay</b>Portfolio</h1>
+          </div>
+      </div>
+      <div id="main">
+          <div id="page">
+              <div id="loop">
+                  <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
+                  <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
+                  <h1><b>Jay</b>Design  <b><i>Code</i></b> <span>Data Science</span> Software<span><i>METAVERSE.</i></span></h1>
+              </div>
+              <h3>CYBERFICTION AIMS TO BE A DECENTRALIZED COMMUNITY THAT CAN <br> CREATE NEW VALUES AND PROFITS THROUGH PLAY IN THE VIRTUAL <br> WORLD.</h3>
+              <h4>...SCROLL TO READ</h4>
+              <canvas></canvas>
+          </div>
+          <div id="page1">
+              <div id="right-text">
+                  <h3>Jay Portfolio / KEY WORD</h3>
+                  <h1>HAVE FUN
+                      <br>
+                      LET'S PLAY
+                      <br>
+                      JUST BE TOGETHER</h1>
+              </div>
+              <div id="left-text">
+                  <h1>MAKE A STORY
+                      <br>
+                      TAKE A CHANCE
+                      <br>
+                      BUILD AND OWNED</h1>
+                      <h3>..AND MAINTAIN GOOD HUMANITY</h3>
+              </div>
+          </div>
+          <div id="page2">
+              <div id="text1">
+                  <h3>CYBERFICTION / HAVE FUN</h3>
+                  <h1>LET'S
+                      <br>
+                      HAVE FUN
+                      <br>
+                      TOGETHER</h1>
+              </div>
+              <div id="text2">
+                  <p>LET'S HAVE A BLAST! LET'S JUST THROW AWAY AGE, GENDER, REGION, <br> STATUS, ETC., DON'T COMPETE, DON'T FIGHT, COOPERATE AND SHARE <br> WITH EACH OTHER AND ENJOY IT TOGETHER! SO THAT YOU CAN STAND <br> THERE IN THE NOT-TOO-DISTANT FUTURE AND DREAM OF ANOTHER NEW <br> FUTURE</p>
+              </div>
+          </div>
+          <div id="page3">
+              <div id="text3">
+                  <h3>CYBERFICTION / PLAYGROUND</h3>
+                  <h1>
+                      CYBERFIELD
+                      <br>
+                      IS OUR
+                      <br>
+                      PLAYGROUND
+                  </h1>
+              </div>
+          </div>
+          <div id="page4">
+            
+              <!-- Slider -->
+              <div class="slider-content">
+                <div class="slide-number">
+                    <div class="prefix">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                    <div class="postfix"><span>/</span>3</div>
+                </div>
+                <div class="slide-name">
+                <div class="names">
+                    <div>Solar Mode</div>
+                    <div>Pluto Mode</div>
+                    <div>Mars Mode</div>
+                </div>
+                </div>
+                <div class="slide-year">
+                <div class="years">
+                    <div>2031</div>
+                    <div>2041</div>
+                    <div>2051</div>
+                </div>
+                </div>
+                <div class="slider">
+                <div class="slide" id="slide-1">
+                    <img src="./images/1.png" alt="" />
+                    <div style="color: black;">Shift Mode <button>Click me</button></div>
+                </div>
+                <div class="slide" id="slide-2">
+                    <img src="./images/2.png" alt="" />
+                </div>
+                <div class="slide" id="slide-3">
+                    <img src="./images/1.png" alt="" />
+                </div>
+                </div>
+                <div style="height: 400vh;"></div>
             </div>
+      <div class="bannercontainer">
+  
+          <div class="centered-container">
+            <mat-card class="side-card">
+              <div class="banner"></div> <!-- Background image banner -->
+              <mat-card-content>
+                <div class="glass1">
+                  <p class="head">
+                    This portfolio is designed to be a user friendly the journey towards
+                  </p>
+                  <button mat-button  class="documentation-button" style="color: black">
+                    <span>Documentation</span>
+                    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+                  </button>
+                  <button mat-button  class="documentation-button" style="color: black">
+                    <span>Dashboard</span>
+                    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+                  </button>
+                  <button mat-button class="documentation-button" style="color: black">
+                    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+                    <span>UI / UX</span>
+                  </button>
+                  <button mat-button  class="documentation-button" style="color: black">
+                    <span>Report</span>
+                    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+                  </button>
+                </div>
+        
+                <div class="glass2">
+                  <p class="titlepercentage">
+                    93%
+                  </p>
+                  <p class="subtitlepercentage">
+                    Code Coverage
+                  </p>
+                  <button mat-button  class="documentation-button" style="color: black;margin:1rem 0 0 0rem;left:50%">
+                    <span>Check Report</span>
+                    <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+                  </button>
+                </div>
+              </mat-card-content>
+              <button mat-button  class="documentation-button" style="color: black;width: fit-content;left: 75%;position: absolute;margin-top: 18rem">
+                <span>Documentation</span>
+                <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+              </button>
+              <button mat-button  class="architecture-button" style="color: white;width: fit-content;left: 75%;position: absolute;margin-top: 21rem;">
+                <span>Architecture</span>
+                <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+              </button>
+              <button mat-button  class="architecture-button" style="color: white;width: fit-content;left: 75%;position: absolute;margin-top: 24rem;">
+                <span>Growth</span>
+                <mat-icon iconPositionEnd>arrow_forward</mat-icon>
+              </button>
+            </mat-card>
+          </div>
+        </div>
+        
+  
+  
+  
+          </div>
+      </div>
+
+      3333
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+          <div class="loader-1 bar"></div>
+          <div class="loader-2 bar"></div>
+        </div>
+
+        <div class="counter">
+          <div class="counter-1 digit">
+            <div class="num">0</div>
+            <div class="num num1offset1">1</div>
+          </div>
+          <div class="counter-2 digit">
+            <div class="num">0</div>
+            <div class="num num1offset2">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+            <div class="num">0</div>
+          </div>
+          <div class="counter-3 digit">
+            <div class="num">0</div>
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+          </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- JavaScript ---------------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
-</body>
+
+    <script>
+
+    // Loader JS***************
+      document.addEventListener("DOMContentLoaded",function(){
+        const counter3=document.querySelector(".counter-3");
+
+        for (let i=0;i<2;i++){
+          for(let j=0;j<10;j++){
+            const div=document.createElement("div");
+            div.className="num";
+            div.textContent=j;
+            counter3.appendChild(div);
+          }
+        }
+
+        const finalDiv=document.createElement("div");
+        finalDiv.className="num";
+        finalDiv.textContent="0";
+        counter3.appendChild(finalDiv);
+
+        function animate(counter,duration,delay=0){
+          const numHeight=counter.querySelector(".num").clientHeight;
+          const totalDistance=(counter.querySelectorAll(".num").length-1)*numHeight;
+
+          gsap.to(counter,{
+            y:-totalDistance,
+            duration:duration,
+            delay:delay,
+            ease:"power2.inOut",
+          });
+        }
+
+        animate(counter3,5);
+        animate(document.querySelector(".counter-2"),6);
+        animate(document.querySelector(".counter-1"),2,4);
+      });
+
+      gsap.to(".digit",{
+        top:"-150px",
+        stagger:{
+          amount:0.25,
+        },
+        delay:6,
+        duration:1,
+        ease:"power4.inOut",
+      });
+
+      gsap.from(".loader-1",{
+        width:0,
+        duration:6,
+        ease:"power2.inOut",
+      });
+
+      gsap.from(".loader-2",{
+        width:0,
+        duration:6,
+        delay:1.9,
+        ease:"power2.inOut",
+      });
+
+      gsap.to(".loader",{
+        background:"none",
+        delay:2,
+        duration:0.1,
+      })
+
+      gsap.to(".loader-1",{
+        rotate:90,
+        y:-50,
+        duration:0.5,
+        delay:6,
+      });
+
+      gsap.to(
+        ".loader-2",{
+          x:-75,
+          y:75,
+          duration:0.5,
+        },
+        "<"
+      );
+
+      gsap.to(".loader",{
+        scale:40,
+        duration:1,
+        delay:7,
+        ease:"power2.inOut",
+      });
+
+      gsap.to(".loader",{
+        rotate:45,
+        y:500,
+        x:2000,
+        duration:1,
+        delay:7,
+        ease:"power2.inOut",
+      });
+
+      gsap.to(".loading-screen",{
+        opacity:0,
+        duration:0.5,
+        delay:7.5,
+        ease:"power1.inOut",
+      });
+
+      gsap.to("h1",1.5,{
+        delay:7,
+        y:-80,
+        ease:"power4.inOut",
+        stagger:{
+          amount:0.1,
+        },
+      });
+
+    //   Slider JS****************************
+      document.addEventListener("DOMContentLoaded", function () {
+        const slides = document.querySelectorAll(".slide");
+        let currentSlideIndex = 0;
+        let isAnimating = false;
+        let currentTopValue = 0;
+
+        const elements = [
+          { selector: ".prefix", delay: 0 },
+          { selector: ".name", delay: 0.15 },
+          { selector: ".years", delay: 0.3 }
+        ];
+
+        slides.forEach((slide, idx) => {
+          if (idx !== 0) {
+            const img = slide.querySelector("img");
+            gsap.set(img, { scale: 2, top: "4em" });
+          }
+        });
+        function showSlide(index) {
+          if (isAnimating) return;
+          isAnimating = true;
+          const slide = slides[index];
+          const img = slide.querySelector("img");
+
+          currentTopValue -= 30;
+
+          elements.forEach((elem) => {
+            gsap.to(document.querySelector(elem.selector), {
+              y: `${currentTopValue}px`,
+              duration: 2,
+              ease: "power4.inOut",
+              delay: elem.delay
+            });
+          });
+
+          gsap.to(img, {
+            scale: 1,
+            top: "0%",
+            duration: 2,
+            ease: "power3.inOut"
+          });
+
+          gsap.to(
+            slide,
+            {
+              clipPath: "polygon(0 0%,100% 0%,100% 100%,0 100%)",
+              duration: 2,
+              ease: "power4.inOut",
+              onComplete: () => {
+                isAnimating = false;
+              }
+            },
+            "<"
+          );
+        }
+
+        function hideSlide(index) {
+          if (isAnimating) return;
+
+          isAnimating = true;
+          const slide = slides[index];
+          const img = slide.querySelector("img");
+
+          currentTopValue += 30;
+          elements.forEach((elem) => {
+            gsap.to(document.querySelector(elem.selector), {
+              y: `${currentTopValue}px`,
+              duration: 2,
+              ease: "power4.inOut",
+              delay: elem.delay
+            });
+          });
+
+          gsap.to(slide, {
+            clipPath: "polygon(0 100%,100% 100%,100%,100%,0 100%)",
+            duration: 2,
+            ease: "power4.inOut"
+          });
+          gsap.to(img, {
+            scale: 2,
+            top: "4em",
+            duration: 2,
+            ease: "power3.inOut"
+          });
+
+          gsap.to(
+            slide,
+            {
+              clipPath: "polygon(0 100%,100% 100%,100% 100%,0 100%)",
+              duration: 2,
+              ease: "power4.inOut",
+              onComplete: () => {
+                isAnimating = false;
+              }
+            },
+            "<"
+          );
+        }
+
+        window.addEventListener("wheel", (e) => {
+          if (isAnimating) return;
+          if (e.deltaY > 0 && currentSlideIndex < slides.length - 1) {
+            showSlide(currentSlideIndex + 1);
+            currentSlideIndex++;
+          } else if (e.deltaY < 0 && currentSlideIndex > 0) {
+            hideSlide(currentSlideIndex);
+            currentSlideIndex--;
+          }
+        });
+      });
+
+
+
+
+
+
+      
+    </script>
+  </body>
 </html>
