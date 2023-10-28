@@ -648,4 +648,156 @@ canvas{
 
 
 
+/* Card Banner CSS */
+.cardboard{
+  width: 90rem;
+  flex-shrink: 0;
+}
+.card-container{
+  display: flex;
+  padding: 12px;
+  left: 1;
+  width: 90rem;
+  flex-shrink: 0;
+  flex-shrink: 0;
+  border-radius: 2rem;
+  background: linear-gradient(0deg, #E7E8E9 0%, #E7E8E9 100%), radial-gradient(120.21% 65.09% at 16.34% 44.29%, rgba(255, 255, 255, 0.50) 0%, rgba(52, 45, 53, 0.14) 100%);
+}
+.card-left{
+  flex: 1;
+  padding: 10px;
+}
+.card-right{
+  flex: 1;
+  text-align: center;
+  width: 46.9375rem;
+  height: 46.375rem;
+  flex-shrink: 0;
+  border-radius: 2rem;
+  background: url(images/red.png), lightgray -26.859px -41.579px / 123.971% 114.936% no-repeat;
+}
+.line{
+  width: 37rem;
+  stroke-width: 0.968px;
+  stroke: rgba(0, 0, 0, 0.50);
+  margin: 25px 0;
+}
+.subtext{
+  width: 17.75rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+  color: #2C2D32;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 117.5%; /* 1.175rem */
+  letter-spacing: 0.01rem;
+}
+.title{
+  width: 38.35088rem;
+  height: 14.3125rem;
+  flex-shrink: 0;
+  color: #2C2D32;
+  font-family: Inter;
+  font-size: 3.97875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 116%; /* 4.61538rem */
+  letter-spacing: 0.03981rem;
+}
+.tag{
+  width: 39.125rem;
+  color: #000;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.5%; /* 1.365rem */
+  letter-spacing: 0.01rem;
+}
+.check{
   
+  
+}
+.arrow-button {
+  cursor: pointer;
+  border: none;
+  width: 10rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #CC7377;
+  background-image: url('./images/rightarrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  margin-right: 2rem;
+
+}
+.arrow-button-text{
+  border: none;
+  cursor: pointer;
+  width: 11rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  align-items: center;
+  padding-right: 1rem;
+  justify-content: center;
+  border-radius: 2rem;
+  background: #ffffff;
+  background-image: url('./images/rightarrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  margin-right: 1rem;
+  
+}
+
+
+
+
+
+.github{
+  width: 10rem;
+  height: 3.3125rem;
+  flex-shrink: 0;
+  padding-right: 1.5rem;
+
+  border-radius: 2rem;
+  border: 1px solid #000;
+  background: #FFF;
+  cursor: pointer;
+  background-image: url('./images/star.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  margin-right: 2rem;
+}
+.box1{
+  margin: 5rem 0 0 2rem;
+  position: absolute;
+  width: 14.70581rem;
+  height: 20.22894rem;
+  flex-shrink: 0;
+  border-radius: 1.70188rem;
+  border: 0.454px solid rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0px 18.15319px 36.30639px 0px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(18.1531925201416px);
+}
+.box-title{
+  width: auto;
+  height: 3.74238rem;
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+  color: #FFF;
+  font-family: Sansita;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  padding: 1rem;
+  line-height: normal;
+}
