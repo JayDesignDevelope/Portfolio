@@ -9,107 +9,11 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    font-family: gilroy;
+    font-family: sans-serif;
+
 
   }
   
-/* Slider CSS */
-  .slider {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .slide {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
-  }
-  
-  #slide-1 {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-  
-  img {
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    object-fit: cover;
-  }
-  
-  .slider-content {
-
-    position: relative;
-    top: 0;  
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-  
-  .slide-number {
-    position: absolute;
-    top: 55%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    z-index: 30000;
-    gap: 0.25rem;
-  }
-  
-  .postfix span {
-    padding: 0 0.25rem;
-  }
-  
-  .slide-name {
-    position: absolute;
-    top: 55%;
-    left: 30%;
-    z-index: 100000;
-    transform: translate(-50%, -50%);
-  }
-  
-  .slide-year {
-    position: absolute;
-    top: 55%;
-    z-index: 30000;
-    right: 20%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .slide-number,
-  .slide-name,
-  .slide-year {
-    font-size: 18px;
-    line-height: 30px;
-    clip-path: polygon(0 0, 100% 0, 100% 30px, 0 30px);
-    text-transform: uppercase;
-  }
-  
-  .prefix,
-  .name,
-  .years {
-    position: relative;
-    top: 0;
-  }
-  
-  @media (max-width: 900px) {
-    .slide-name {
-      left: 50%;
-    }
-    .slide-year {
-      right: 10%;
-    }
-  }
-  
-  button {
-    z-index: 200000;
-  }
   
   
   /* Loader CSS*/
@@ -152,7 +56,7 @@
     position: relative;
     right: -10px;
   }
-  
+
   .loader {
     position: absolute;
     top: 50%;
@@ -244,6 +148,12 @@
     height: 100vh;
     width: 100vw;
     background-color: #f1f1f1;
+}
+#page4{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1f1f1;
 }
 canvas{
     position: relative;
@@ -656,12 +566,7 @@ canvas{
 .card-container{
   display: flex;
   padding: 12px;
-  left: 1;
-  width: 90rem;
-  flex-shrink: 0;
-  flex-shrink: 0;
-  border-radius: 2rem;
-  background: linear-gradient(0deg, #E7E8E9 0%, #E7E8E9 100%), radial-gradient(120.21% 65.09% at 16.34% 44.29%, rgba(255, 255, 255, 0.50) 0%, rgba(52, 45, 53, 0.14) 100%);
+  width: auto;
 }
 .card-left{
   flex: 1;
@@ -800,4 +705,412 @@ canvas{
   text-align: left;
   padding: 1rem;
   line-height: normal;
+}
+
+
+
+/* Netflix-Banner */
+.container{
+  background: #ecebec;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 1em 2em 2em;
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 2em;
+}
+
+.nav > * {
+  position: relative;
+}
+.nav a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  padding: 0 1em;
+  font-size: 0.7em;
+
+  font-weight: 300;
+}
+
+@media (max-width: 900) {
+  .nav .nav-links {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.header .col {
+  width: 60%;
+}
+
+.header .col:nth-child(2) {
+  width: 40%;
+}
+
+.header h1 {
+  position: relative;
+  font-family: "Monument Extended";
+  font-size: 100px;
+  line-height: 1;
+  color: #000000;
+  margin: 0;
+}
+
+.play-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: url(./front-view.png);
+  background-size: cover;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.4em;
+}
+
+.play-btn {
+  width: 70px;
+  height: 70px;
+
+  background: #000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn ion-icon {
+  color: #ecebec;
+}
+
+.pattern {
+  text-align: center;
+  padding: 1em 0;
+  letter-spacing: 10px;
+  opacity: 0.2;
+}
+
+.copy p {
+  font-family: "Monument Extended";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.btn-container {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2em;
+  font-size: 2em;
+}
+
+.btns {
+  display: flex;
+    font-size: 0.7em;
+
+}
+
+.btn {
+  border: 1px solid #000;
+  margin-right: 1em;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+  font-family: "Monument Extended";
+  font-weight: 300;
+  font-size: 0.7em;
+
+}
+
+.divider {
+  width: 70%;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  position: relative;
+  width: 95%;
+  height: 50vh;
+  border-radius: 40px 40px 0 0;
+  margin: 2em auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero-wrapper {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #ecebec;
+}
+
+/* marquee styles */
+.marquee {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+  white-space: nowrap;
+  z-index: 3;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+/* Product styles banner  */
+
+.product-hero {
+  bottom: 15vh;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  background: #000;
+  flex-direction: column;
+}
+
+.product-hero p {
+  font-size: 40px;
+  width: 70%;
+  color: #000;
+  margin-bottom: 2em;
+  line-height: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title h1 {
+  font-weight: 400;
+  font-size: 100px;
+  color: #000000;
+  background: #000;
+  padding: 0.4em 0;
+}
+
+.product-title {
+  font-size: 30px;
+}
+
+.product-title span {
+  text-decoration: underline;
+}
+
+.product-look img {
+  height: 600px;
+  width: 600px;
+}
+
+@media (max-width: 900px) {
+  .product-hero p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .product-title h1 {
+    font-size: 40px;
+    padding: 0;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-look img {
+    width: 50vw;
+    margin-top: 5rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.product-info {
+  position: absolute;
+  background: #ecebec;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-nav,
+.product-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-nav > * {
+  margin: 0 1em;
+}
+
+.product-img {
+  width: 100px;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-name {
+  font-size: 24px;
+}
+
+.product-name span {
+  font-size: 12px;
+}
+
+.product-variants {
+  background: #fff;
+  padding: 0.5em 1em;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.product-nav-links {
+  margin: 0 4em;
+}
+
+.product-nav-links > button {
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.product-btn button {
+  border: none;
+  outline: none;
+  background: #000;
+  color: #fff;
+  padding: 1.4em 2.8em;
+  border-radius: 40px;
+  margin-left: 2em;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .product-name,
+  .product-img,
+  .product-variants,
+  .product-nav-links > button:nth-child(2) {
+    display: none;
+  }
+
+  .product-nav-links {
+    margin: 0;
+  }
+}
+
+.product-description {
+  position: fixed;
+  width: 100%;
+  height: 50vh;
+  bottom: -50vh;
+  background: #ecebec;
+  border-top: 1px solid #000;
+  padding-bottom: 15vh;
+  display: flex;
+}
+
+.close-desc {
+  padding: 2em;
+  cursor: pointer;
+}
+
+.desc {
+  flex: 1;
+  padding: 2em;
+}
+
+.link {
+  margin: 2em 0;
+}
+
+.link span::after {
+  position: relative;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background: #000;
+}
+
+.front-view,
+.side-view {
+  flex: 2;
+}
+
+.view {
+  padding: 2em 4em;
+}
+
+.product-description img {
+  width: 400px;
+}
+
+.sketch-title {
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .front-view,
+  .side-view {
+    display: none;
+  }
 }
