@@ -10,6 +10,7 @@
     width: 100vw;
     overflow: hidden;
     font-family: sans-serif;
+    background-color: #000;
 
 
   }
@@ -23,8 +24,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: black;
-    color: white;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     pointer-events: none;
   }
   
@@ -73,12 +74,12 @@
   
   .loader-1 {
     position: relative;
-    background: white;
+    background: rgb(0, 0, 0);
     width: 200px;
   }
   .loader-2 {
     position: relative;
-    background: white;
+    background: rgb(0, 0, 0);
     width: 100px;
   }
   
@@ -105,10 +106,13 @@
   
   .h1 {
     display: flex;
+    color: #fff;
   }
   
   h1 {
     font-size: 80px;
+    color: #fff;
+
   }
   
   .header .h1 h1 {
@@ -116,6 +120,8 @@
     position: relative;
     top: 80px;
     margin: 0 10px;
+    color: #fff;
+
   }
   
 
@@ -129,35 +135,43 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f1f1f1;
+    color: #f1f1f1;
 }
 #page1{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f1f1f1;
+    color: #f1f1f1;
 }
 #page2{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f1f1f1;
+    color: #f1f1f1;
 }
 #page3{
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #f1f1f1;
+    color: #f1f1f1;
 }
 #page4{
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #f1f1f1;
+  color: #f1f1f1;
 }
-canvas{
+canvas{position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Set a lower z-index for the canvas to place it behind the text */
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Set the background color of the canvas, adjust as needed */
+
+
+
     position: relative;
-    z-index: 9;
     max-width: 100vw;
     max-height: 100vh;
 }
@@ -169,6 +183,8 @@ canvas{
     width: 100%;
     font-size: 100px;
     white-space: nowrap;
+    color: #fff;
+
     font-family: gilroy;
 }
 #loop>h1{
@@ -176,6 +192,8 @@ canvas{
     animation-name: anim;
     animation-duration: 15s;
     animation-timing-function: linear;
+    color: #fff;
+
     animation-iteration-count: infinite;
 }
 #loop>h1>span{
@@ -200,11 +218,15 @@ canvas{
     position: fixed;
     z-index: 10000;
     padding: 0px 30px;
+    color: #fff;
+
 }
 #nav>h3{
     font-family: gilroy;
     font-weight: 400;
     font-size: 22px;
+    color: #fff;
+
 }
 #nav>button{
     padding: 10px 20px;
@@ -218,7 +240,7 @@ canvas{
     top: 55%;
     font-family: gilroy;
     font-weight: 400;
-    color: #7c7c7c;
+    color: #fff;
     left: 5%;
 }
 #page>h4{
@@ -227,6 +249,8 @@ canvas{
     left: 25%;
     font-family: gilroy;
     font-weight: 500;
+    color: #ffff;
+
 }
 #page1>#right-text{
     position: absolute;
@@ -235,44 +259,58 @@ canvas{
 }
 #page1>#right-text>h3{
     font-weight: 400;
-    color: #7c7c7c;
+    color: #fff;
 }
 #page1>#right-text>h1{
     line-height: 1.5;
     font-size: 50px;
+    color: #fff;
+
 }
 #page1>#left-text{
     position: absolute;
     top: 50%;
     right: 10%;
     text-align: end;
+    color: #fff;
+
 }
 #page1>#left-text>h1{
     font-size: 50px;
     line-height: 1.5;
+    color: #fff;
+
 }
 #page1>#left-text>h3{
     color: #7c7c7c;
     font-weight: 400;
+    color: #fff;
+
 }
 #page2>#text1{
     position: absolute;
     top: 30%;
     left: 10%;
+    color: #fff;
+
 }
 #page2>#text1>h3{
-    color: #7c7c7c;
-    font-weight: 400;
+  color: #fff;
+  font-weight: 400;
 }
 #page2>#text1>h1{
     font-size: 60px;
     line-height: 1.5;
+    color: #fff;
+
 }
 #page2>#text2{
     position: absolute;
     top: 55%;
     right: 10%;
     text-align: end;
+    color: #fff;
+
 }
 #page2>#text2>p{
     color: #7c7c7c;
@@ -283,13 +321,16 @@ canvas{
     top: 40%;
     right: 10%;
     text-align: end;
+    color: #fff;
+
 }
 #page3>#text3>h3{
-    color: #7c7c7c;
-    font-weight: 400;
+  color: #fff;
+  font-weight: 400;
 }
 #page3>#text3>h1{
     font-size: 70px;
+    color: #fff;
 
 }
 
@@ -768,7 +809,8 @@ canvas{
   font-family: "Monument Extended";
   font-size: 100px;
   line-height: 1;
-  color: #000000;
+  color: #ffffff;
+  background-color: #000;
   margin: 0;
 }
 
